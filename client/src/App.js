@@ -2,11 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from './components/Navbar';
+import Login from './components/Login';
+import Registration from './components/Registration';
+import Home from './components/Home';
 
 function App() {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
+      {/* <Login/> */}
+      {/* <Registration/> */}
+      <Home/>
       <Routes>
         {/* <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
