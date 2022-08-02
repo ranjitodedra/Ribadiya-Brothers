@@ -4,12 +4,13 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Registration from './components/Registration';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
 
 function App() {
   return (
     <div>
-      {/* <Navbar/> */}
+      <Navbar/>
       {/* <Login/> */}
       {/* <Registration/> */}
       <Home/>

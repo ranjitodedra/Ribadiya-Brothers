@@ -1,67 +1,24 @@
-import '../App.css';
-import { NavLink } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function Navbar(props) {
-    return (
-        <>
-            <nav class="navbar navbar-expand-lg shadow">
-                <div class="container">
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <NavLink className="nav-link active" aria-current="page" to="/home">Home</NavLink>
-                            </li>
-                            <li class="nav-item">
-                                <NavLink className="nav-link" to="/about">About</NavLink>
-                            </li>
-                            <li class="nav-item">
-                                <NavLink className="nav-link" to="/services">Services</NavLink>
-                            </li>
-                            <li class="nav-item">
-                                <NavLink className="nav-link" to="/contact">Contact</NavLink>
-                            </li>
-
-                        </ul>
-
-                        <NavLink className="navbar-brand fw-bold fs-4 mx-auto" to="/home">Aesthic Fox</NavLink>
-
-                        {
-                            props.auth ?
-                                <>
-                                    <NavLink className="btn btn-primary ms-auto rounded-pill" to="/login">
-                                        <i className="fa fa-sign-in ms-2"> </i>
-                                        Login
-                                    </NavLink>
-
-                                    <NavLink className="btn btn-outline-primary ms-2 rounded-pill" to="/register">
-                                        <i className="fa fa-user-plus ms-2"> </i>
-                                        Register
-                                    </NavLink>
-                                </> : <>
-
-                                    <NavLink className="btn btn-outline-primary ms-2 rounded-pill" to="/dashboard">
-                                        <i className="fa fa-user-plus ms-2"> </i>
-                                        Dashboard
-                                    </NavLink>
-
-                                    <NavLink className="btn btn-outline-primary ms-2 rounded-pill" to="/logout">
-                                        <i className="fa fa-sign-out ms-2"> </i>
-                                        Logout
-                                    </NavLink>
-
-                                </>
-                        }
-
-                    </div>
-                </div>
-            </nav>
-        </>
-    );
+function BasicExample() {
+  return (
+    <div className="container-1">
+    <Navbar bg="none" expand="lg">
+        <Navbar.Brand href="#home">RibadiyaBrothers</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">AboutUS</Nav.Link>
+            <Nav.Link href="#link">ContactUS</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+    </Navbar>
+    </div>
+  );
 }
 
-export default Navbar;
+export default BasicExample;
