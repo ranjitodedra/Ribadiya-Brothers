@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Registration from './components/Registration';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
 
 

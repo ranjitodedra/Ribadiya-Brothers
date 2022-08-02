@@ -7,8 +7,7 @@
 }
 
 body {
-  
-  /* background-image: url("./img/bg3.jpg"); */
+ 
   /* background: linear-gradient(to top right, #afb2df, #c5b1d7,#DAAFD4, #f5ACCA,#f9BCD1); */
   background: linear-gradient(to top right, #b6b7d0, #c9bed2,#cdb7ca, #f1c6d8,#f9BCD1);
   height: 100vh;
@@ -17,14 +16,13 @@ body {
 
 .container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  height: 50%;
-  width: 30vw;
-  background: rgba(255,255,255,0.15);
+  background: white;
+  /* background: rgba(124, 24, 24, 0.15); */
   box-shadow: 0 8px 32px 0 rgba(31, 37, 135, 0.37);
-  backdrop-filter: blur(8.5px) ;
-  border-radius: 10px;
+  /* backdrop-filter: blur(8.5px) ; */
+  /* background-color: brown; */
   color: black;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
@@ -86,4 +84,10 @@ body {
 .acc a{
   text-decoration: none;
   color: black;
+}
+
+.container-1 {
+  background: whitesmoke;
+  padding-left: 10%;
+  padding-right: 10%;
 }
