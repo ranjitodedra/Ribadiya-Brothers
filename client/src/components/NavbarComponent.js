@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function BasicExample() {
+function NavbarComponent() {
   return (
     <div className="container-1">
     <Navbar bg="none" expand="lg">
@@ -21,4 +21,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default NavbarComponent;
