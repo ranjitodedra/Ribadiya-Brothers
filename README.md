@@ -1,8 +1,6 @@
 <h1 align="center">Ribadiya Brothers</h1>
 
-- A E-commerce 
-
-Created Using 
+a E-commerce website created Using 
 1. ReactJs
 2. NodeJs
 3. ExpressJS
