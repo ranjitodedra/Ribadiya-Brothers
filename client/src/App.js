@@ -6,12 +6,14 @@ import NavbarComponent from './components/NavbarComponent'
 // import Registration from './components/Registration';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
       <NavbarComponent/>
       <Home/>
+      <Footer/>
     </div>
   );
 }
