@@ -1,11 +1,46 @@
 {
-  "name": "server",
+  "name": "e-commerce",
   "version": "1.0.0",
-  "description": "none",
-  "main": "index.js",
+  "description": "",
+  "main": "/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node server.js"
   },
-  "author": "ranjit",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": " "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@reduxjs/toolkit": "^1.8.2",
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.0",
+    "nodemailer": "^6.7.5",
+    "react": "^17.0.0",
+    "react-alert": "^7.0.3",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^3.11.0",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "stripe": "^9.9.0",
+    "validator": "^13.7.0",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "overlay-navbar": "^1.2.3",
+    "redux-devtools-extension": "^2.13.9"
+  }
 }
