@@ -22,6 +22,8 @@ const SignIn = ({ history }) => {
     dispatch(login(loginEmail, loginPassword));
   };
   useEffect(() => {
+    if(error){
+      alert.error(error)
       dispatch(clearErrors());
     }
 

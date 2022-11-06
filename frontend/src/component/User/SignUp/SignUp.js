@@ -20,7 +20,7 @@ const SignUp = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   const sgnup = async () => {
-    const res = await axios.post("api/v1/register", {
+    const res = await axios.post(`api/v1/register`, {
       name,
       email,
       password,
@@ -44,9 +44,11 @@ const SignUp = () => {
   }, [dispatch, error, alert, history]);
   return (
     <Fragment>
-      {loading ? (
-        <Loader />
-      ) : (
+      {
+      // loading ? (
+      //   <Loader />
+      // ) : 
+      
         <Fragment>
           <div className="win">
             <div className="form">
@@ -103,7 +105,7 @@ const SignUp = () => {
             </div>
           </div>
         </Fragment>
-      )}
+      }
     </Fragment>
   );
 };
