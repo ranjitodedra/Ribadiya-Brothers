@@ -5,4 +5,3 @@ a E-commerce website created Using
 2. NodeJs
 3. ExpressJS
 4. MongoDB
-5. Bootstrap
