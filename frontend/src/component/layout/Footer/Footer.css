@@ -1,0 +1,87 @@
+footer {
+    margin-top: 2%;
+    background: white;
+    position: sticky;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  
+  footer .col {
+    margin: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  footer .logo {
+    margin-bottom: 30px;    
+  }
+  
+  footer h4 {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  
+  footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+  }
+  
+  footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  footer .follow {
+    margin-top: 50px;
+    
+  }
+  
+  footer .follow i {
+    
+    color: #465b52;
+    padding-right: 15px;
+    cursor: pointer;
+  }
+  
+  footer .install .row input {
+    /* border: 1px solid #088178; */
+    border: 1px solid black;
+    height: 50%;
+    margin-bottom: 10%;
+    border-radius: 6px;
+  }
+  footer .install .row button {
+    /* border: 1px solid #088178; */
+    border: 1px solid black;
+    height: 30%;
+    margin-bottom: 10%;
+    border-radius: 6px;
+  }
+  
+  footer .install img {
+    margin: 10px 0 15px 0;
+  }
+  
+  footer .follow i:hover,
+  footer a:hover {
+    color: #088178;
+  }
+  
+  footer .copyright {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  @media (max-width:540px) {
+
+    /* footer .copyright {
+        text-align: start;
+    } */
+
+  }

@@ -1,0 +1,30 @@
+.win {
+    padding: 50px 0px 300px 0px;
+}
+
+.form {
+    /* background-color: #fff; */
+    width: 300px;
+    /* margin: auto; */
+    /* padding: 50px; */
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #d9d9d9;
+    margin: 10px 0;
+}
+
+.form button{
+    background-color: #000;
+    width: 100%;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 8;
+    margin: 20px 0;
+}
