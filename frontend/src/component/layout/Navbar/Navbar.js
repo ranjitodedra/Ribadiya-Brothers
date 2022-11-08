@@ -13,8 +13,9 @@ import { useDispatch, useSelector } from "react-redux";
 import "./Navbar.css";
 import logo from "../../../images/go.jpg";
 import SearchField from "react-search-field";
+import UserOptions from "./UserOptions_no";
 
-function Navbar() {
+function Navbar(props) {
   const dispatch = useDispatch();
   const {isAuthenticated } = useSelector(
     (state) => state.user
@@ -31,14 +32,6 @@ function Navbar() {
         <div>
           <ul id="navbar">
             <li>
-              <SearchField
-                placeholder="Search..."
-                // onChange={onChange}
-                searchText="Search Products"
-                classNames="test-class"
-              />
-            </li>
-            <li>
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
@@ -54,9 +47,7 @@ function Navbar() {
             {isAuthenticated ? (
               <>
                 <li class="nav-item">
-                <NavLink exact className="nav-link active" to="/logout">
-                  Logout
-                </NavLink>
+                  <UserOptions/>
                 </li>
               </>
             ) : (
@@ -68,22 +59,6 @@ function Navbar() {
                 </li>
               </>
             )}
-            </li>
-            <li id="bag">
-              <NavLink className="cart-style" to="/account">
-                <i>
-                  <FaUser />
-                  User
-                </i>
-              </NavLink>
-            </li>
-            <li id="bag">
-              <NavLink className="cart-style" to="/cart">
-                <i>
-                  <FaShoppingCart />
-                  Cart
-                </i>
-              </NavLink>
             </li>
           </ul>
         </div>

@@ -7,10 +7,12 @@ import PersonIcon from "@material-ui/icons/Person";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+// import MenuIcon from '@mui/icons-material/Menu';
 import { useHistory } from "react-router-dom";
 import { useAlert } from "react-alert";
 import { logout } from "../../../actions/userAction";
 import { useDispatch, useSelector } from "react-redux";
+import menu from "../../../images/menu-51.png"
 
 const UserOptions = ({ user }) => {
   const { cartItems } = useSelector((state) => state.cart);
@@ -75,7 +77,7 @@ const UserOptions = ({ user }) => {
         icon={
           <img
             className="speedDialIcon"
-            // src={user.avatar.url ? user.avatar.url : "/Profile.png"}alt="Profile"
+            src={menu}alt="Menu"
           />
         }
       >
