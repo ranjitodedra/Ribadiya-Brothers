@@ -45,7 +45,7 @@ function Navbar() {
             <li><NavLink to="/products">Gowns</NavLink></li>
             <li><NavLink to="/login">Login</NavLink></li>
             <li id="bag">
-              <NavLink className="cart-style" to="/profile">
+              <NavLink className="cart-style" to="/account">
                 <i><FaUser />User</i>
               </NavLink>
             </li>
