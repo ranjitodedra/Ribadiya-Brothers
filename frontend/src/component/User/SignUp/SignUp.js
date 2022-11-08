@@ -49,10 +49,10 @@ const SignUp = () => {
 
   console.log(email);
   useEffect(() => {
-    if (error) {
-      alert.error(error);
-      dispatch(clearErrors());
-    }
+    // if (error) {
+    //   alert.error(error);
+    //   dispatch(clearErrors());
+    // }
     console.log(password);
     console.log(confirmPassword);
     if (

@@ -22,10 +22,11 @@ const SignIn = ({ history }) => {
     dispatch(login(loginEmail, loginPassword));
   };
   useEffect(() => {
-    if(error){
-      alert.error(error)
-      dispatch(clearErrors());
-    }
+    // if(error){
+    //   alert.error(error)
+    //   dispatch(clearErrors());
+    // }
+
 
     if (isAuthenticated) {
       history.push("/");
