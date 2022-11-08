@@ -16,7 +16,7 @@ import UserOptions from "./component/layout/Navbar/UserOptions_no";
 import { useSelector } from "react-redux";
 import Profile from "./component/User/Profile";
 import ProtectedRoute from "./component/Route/ProtectedRoute";
-// import UpdateProfile from "./component/User/UpdateProfile";
+import UpdateProfile from "./component/User/UpdateProfile";
 // import UpdatePassword from "./component/User/UpdatePassword";
 // import ForgotPassword from "./component/User/ForgotPassword";
 // import ResetPassword from "./component/User/ResetPassword";
@@ -132,6 +132,7 @@ function App() {
         <Route exact  path="/order/confirm" component={ConfirmOrder} />
         <Route exact  path="/process/payment" component={Payment} />
         <Route exact  path="/process/success" component={OrderSuccess} />
+        <Route exact  path="/me/update" component={UpdateProfile} />
 
         {/* <ProtectedRoute exact path="/shipping" component={Shipping} /> */}
 
