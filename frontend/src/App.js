@@ -17,8 +17,8 @@ import { useSelector } from "react-redux";
 import Profile from "./component/User/Profile";
 import ProtectedRoute from "./component/Route/ProtectedRoute";
 import UpdateProfile from "./component/User/UpdateProfile";
-// import UpdatePassword from "./component/User/UpdatePassword";
-// import ForgotPassword from "./component/User/ForgotPassword";
+import UpdatePassword from "./component/User/UpdatePassword";
+import ForgotPassword from "./component/User/ForgotPassword";
 // import ResetPassword from "./component/User/ResetPassword";
 import Cart from "./component/Cart/Cart";
 import Shipping from "./component/Cart/Shipping";
@@ -115,7 +115,7 @@ function App() {
         />
 
         
-        <Route exact path="/password/forgot" component={ForgotPassword} /> */}
+        */}
 
   
 
@@ -125,14 +125,16 @@ function App() {
         <Route exact path="/gowns" component={Gowns} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/SignUp" component={SignUp} />
-        <Route exact  path="/shipping" component={Shipping} />
-        <Route exact  path="/orders" component={MyOrders} />
-        <Route exact  path="/cart" component={Cart} />
-        <Route exact  path="/profile" component={Profile} />
-        <Route exact  path="/order/confirm" component={ConfirmOrder} />
-        <Route exact  path="/process/payment" component={Payment} />
-        <Route exact  path="/process/success" component={OrderSuccess} />
-        <Route exact  path="/me/update" component={UpdateProfile} />
+        <Route exact path="/shipping" component={Shipping} />
+        <Route exact path="/orders" component={MyOrders} />
+        <Route exact path="/cart" component={Cart} />
+        <Route exact path="/account" component={Profile} />
+        <Route exact path="/order/confirm" component={ConfirmOrder} />
+        <Route exact path="/process/payment" component={Payment} />
+        <Route exact path="/process/success" component={OrderSuccess} />
+        <Route exact path="/me/update" component={UpdateProfile} />
+        <Route exact path="/password/update" component={UpdatePassword} />
+        <Route exact path="/password/forgot" component={ForgotPassword} /> 
 
         {/* <ProtectedRoute exact path="/shipping" component={Shipping} /> */}
 
