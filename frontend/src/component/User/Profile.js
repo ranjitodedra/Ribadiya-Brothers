@@ -9,19 +9,19 @@ import "./Profile.css";
 const Profile = ({ history }) => {
   const { user, loading, isAuthenticated } = useSelector((state) => state.user);
 
-  // useEffect(() => {
-  //   if (isAuthenticated === false) {
-  //     history.push("/login");
-  //   }
-  // }, [history, isAuthenticated]);
+  useEffect(() => {
+    if (isAuthenticated === false) {
+      history.push("/login");
+    }
+  }, [history, isAuthenticated]);
   return (
     <Fragment>
       {loading ? (
         <Loader />
       ) : (
         <Fragment>
-          <MetaData title={`Sara's Profile`} />
-          {/* <MetaData title={`${user.name}'s Profile`} /> */}
+          {/* <MetaData title={`Sara's Profile`} /> */}
+          <MetaData title={`${user.name}'s Profile`} />
           <div className="profileContainer">
             <div>
               <h1>My Profile</h1>
@@ -32,18 +32,18 @@ const Profile = ({ history }) => {
             <div>
               <div>
                 <h4>Full Name</h4>
-                <p>Sara Odedra</p>
-                {/* <p>{user.name}</p> */}
+                {/* <p>Sara Odedra</p> */}
+                <p>{user.name}</p>
               </div>
               <div>
                 <h4>Email</h4>
-                <p>Sara@gmail.com</p>
-                {/* <p>{user.email}</p> */}
+                {/* <p>Sara@gmail.com</p> */}
+                <p>{user.email}</p>
               </div>
               <div>
                 <h4>Joined On</h4>
-                <p>2nd November</p>
-                {/* <p>{String(user.createdAt).substr(0, 10)}</p> */}
+                {/* <p>2nd November</p> */}
+                <p>{String(user.createdAt).substr(0, 10)}</p>
               </div>
 
               <div>

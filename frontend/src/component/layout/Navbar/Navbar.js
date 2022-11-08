@@ -36,7 +36,7 @@ function Navbar() {
             <li><SearchField
                 placeholder="Search..."
                 // onChange={onChange}
-                searchText="Chutye idher se search kar"
+                searchText="Search Products"
                 classNames="test-class"
               /></li>
             <li><NavLink to="/">Home</NavLink></li>
