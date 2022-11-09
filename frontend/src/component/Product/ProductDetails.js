@@ -22,7 +22,6 @@ import {
 import { Rating } from "@material-ui/lab";
 import { NEW_REVIEW_RESET } from "../../constants/productConstants";
 import f1 from '../../images/f1.jpg';
-// import { FiHeart } from 'react-icons/fi';
 import NumericInput from "react-numeric-input";
 
 const ProductDetails = ({ match }) => {

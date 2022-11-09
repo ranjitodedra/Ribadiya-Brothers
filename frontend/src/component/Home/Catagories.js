@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import b2 from '../../images/b2.jpg';
@@ -47,14 +46,11 @@ const Button = styled.button`
 const Catagories = ({ item }) => {
   return (
     <Container>
-      {/* <Link to={`/products/${item.cat}`}> */}
-      {/* <Image src={item.img} /> */}
       <Image src={b2} />
       <Info>
         <Title>Saree</Title>
         <Button>SHOP NOW</Button>
       </Info>
-      {/* </Link> */}
     </Container>
   );
 };
