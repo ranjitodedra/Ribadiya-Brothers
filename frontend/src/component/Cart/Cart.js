@@ -7,11 +7,12 @@ import { Typography } from "@material-ui/core";
 import RemoveShoppingCartIcon from "@material-ui/icons/RemoveShoppingCart";
 import { Link } from "react-router-dom";
 import NumericInput from "react-numeric-input";
+import { useState } from "react";
 
 const Cart = ({ history }) => {
   const dispatch = useDispatch();
   const { cartItems } = useSelector((state) => state.cart);
-
+  const [value, setValue] = useState("");   
   const increaseQuantity = (id, quantity, stock) => {
     const newQty = quantity + 1;
     if (stock <= quantity) {
@@ -80,7 +81,7 @@ const Cart = ({ history }) => {
                     >
                       +
                     </button> */}
-                    <NumericInput min={0} max={100} value={1} />
+                    <NumericInput min={1} max={100} value={1} />
                   </div>
                   <p className="cartSubtotal">{`₹${
                     item.price * item.quantity
